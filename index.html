@@ -1,57 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hindi Language Flashcards</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindi Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Hindi Language Flashcards</h1>
+            <p class="subtitle">Your interactive tool to master Hindi vocabulary, grammar, and more.</p>
+        </header>
 
-  <div class="container">
-    <h1>Hindi Language Flashcards</h1>
+        <div id="topic-selection">
+            <div class="topic-section">
+                <h2 class="topic-title">Basics</h2>
+                <div class="topics">
+                    <button class="topic-button basic-topic" onclick="showTopic('greetings')"><i class="fas fa-hand-sparkles"></i> Greetings</button>
+                    <button class="topic-button basic-topic" onclick="showTopic('numbers')"><i class="fas fa-sort-numeric-down"></i> Numbers</button>
+                    <button class="topic-button basic-topic" onclick="showTopic('days')"><i class="fas fa-calendar-day"></i> Days</button>
+                    <button class="topic-button basic-topic" onclick="showTopic('weather')"><i class="fas fa-cloud-sun"></i> Weather</button>
+                    <button class="topic-button basic-topic" onclick="showTopic('emotions')"><i class="fas fa-smile"></i> Emotions</button>
+                </div>
+            </div>
 
-    <div id="topic-selection" class="topics">
-        <button class="basic-topic" onclick="showTopic('greetings')">Greetings</button>
-        <button class="basic-topic" onclick="showTopic('introductions')">Introductions</button>
-        <button class="basic-topic" onclick="showTopic('routine')">Daily Routine</button>
-        <button class="basic-topic" onclick="showTopic('food')">Food</button>
-        <button class="basic-topic" onclick="showTopic('travel')">Travel</button>
-        <button class="basic-topic" onclick="showTopic('shopping')">Shopping</button>
-        <button class="basic-topic" onclick="showTopic('numbers')">Numbers</button>
-        <button class="basic-topic" onclick="showTopic('family')">Family</button>
-        <button class="basic-topic" onclick="showTopic('health')">Health</button>
-        <button class="basic-topic" onclick="showTopic('daysAndTime')">Days & Time</button>
-        <button class="basic-topic" onclick="showTopic('weather')">Weather</button>
-        <button class="basic-topic" onclick="showTopic('emotions')">Emotions</button>
+            <div class="topic-section">
+                <h2 class="topic-title">Sentence Structures</h2>
+                <div class="topics">
+                    <button class="topic-button sentence-topic" onclick="showTopic('wantSentences')"><i class="fas fa-hand-holding-heart"></i> Want</button>
+                    <button class="topic-button sentence-topic" onclick="showTopic('haveSentences')"><i class="fas fa-book"></i> Have</button>
+                    <button class="topic-button sentence-topic" onclick="showTopic('likeSentences')"><i class="fas fa-thumbs-up"></i> Like</button>
+                    <button class="topic-button sentence-topic" onclick="showTopic('needSentences')"><i class="fas fa-exclamation-circle"></i> Need</button>
+                    <button class="topic-button sentence-topic" onclick="showTopic('canSentences')"><i class="fas fa-check-circle"></i> Can</button>
+                    <button class="topic-button sentence-topic" onclick="showTopic('shouldHaveTo')"><i class="fas fa-clipboard-list"></i> Should/Have To</button>
+                </div>
+            </div>
 
-        <button class="sentence-topic" onclick="showTopic('haveSentences')">Sentences with 'have'</button>
-        <button class="sentence-topic" onclick="showTopic('wantSentences')">Sentences with 'want'</button>
-        <button class="sentence-topic" onclick="showTopic('likeSentences')">Sentences with 'like'</button>
-        <button class="sentence-topic" onclick="showTopic('needSentences')">Sentences with 'need'</button>
-        <button class="sentence-topic" onclick="showTopic('canSentences')">Sentences with 'can'</button>
-        <button class="sentence-topic" onclick="showTopic('shouldHaveTo')">should / have to / need to</button>
-        <button class="sentence-topic" onclick="showTopic('commands')">Commands</button>
+            <div class="topic-section">
+                <h2 class="topic-title">Grammar & Vocabulary</h2>
+                <div class="topics">
+                    <button class="topic-button grammar-topic" onclick="showTopic('commands')"><i class="fas fa-bullhorn"></i> Commands</button>
+                    <button class="topic-button grammar-topic" onclick="showTopic('verbs')"><i class="fas fa-running"></i> Verbs</button>
+                    <button class="topic-button grammar-topic" onclick="showTopic('nouns')"><i class="fas fa-home"></i> Nouns</button>
+                    <button class="topic-button grammar-topic" onclick="showTopic('adjectives')"><i class="fas fa-palette"></i> Adjectives</button>
+                    <button class="topic-button grammar-topic" onclick="showTopic('adverbs')"><i class="fas fa-forward"></i> Adverbs</button>
+                    <button class="topic-button grammar-topic" onclick="showTopic('prepositions')"><i class="fas fa-map-marker-alt"></i> Prepositions</button>
+                    <button class="topic-button grammar-topic" onclick="showTopic('conjunctions')"><i class="fas fa-link"></i> Conjunctions</button>
+                    <button class="topic-button grammar-topic" onclick="showTopic('questionWords')"><i class="fas fa-question-circle"></i> Question Words</button>
+                </div>
+            </div>
 
-        <button class="grammar-topic" onclick="showTopic('verbs')">Verbs</button>
-        <button class="grammar-topic" onclick="showTopic('nouns')">Nouns</button>
-        <button class="grammar-topic" onclick="showTopic('adjectives')">Adjectives</button>
-        <button class="grammar-topic" onclick="showTopic('adverbs')">Adverbs</button>
-        <button class="grammar-topic" onclick="showTopic('prepositions')">Prepositions</button>
-        <button class="grammar-topic" onclick="showTopic('conjunctions')">Conjunctions</button>
-        <button class="grammar-topic" onclick="showTopic('questionWords')">Wh-Question Words</button>
-        <button class="grammar-topic" onclick="showSubtopics('devanagariScript')">Devanagari Script</button>
+            <div class="topic-section">
+                <h2 class="topic-title">Devanagari Script</h2>
+                <div class="topics">
+                    <button class="topic-button script-topic" onclick="showTopic('devanagariScript')"><i class="fas fa-pen-alt"></i> Devanagari Script</button>
+                </div>
+            </div>
+        </div>
 
+        <button id="back-to-topics" class="back-button" onclick="goBackToTopics()" style="display: none;">← Back to Topics</button>
+
+        <div id="flashcards" class="flashcards"></div>
     </div>
 
-    <button id="back-to-topics" class="back-button" onclick="goBackToTopics()" style="display: none;">
-      ← Back to Topics
-    </button>
-    
-    <div id="flashcards" class="flashcards">
-      </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
