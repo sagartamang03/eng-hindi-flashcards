@@ -334,6 +334,7 @@ consonants: [
     ]
   }
 };
+
 let currentTopic = null;
 let currentSubtopic = null;
 
@@ -346,8 +347,9 @@ function showTopic(topic) {
   currentSubtopic = null;
 
   flashcardContainer.innerHTML = "";
-  topicSelection.style.display = "none";
-  backButton.style.display = "block";
+topicSelection.classList.add("hidden");
+  backButton.classList.remove("hidden");
+
   backButton.innerText = "← Back to Topics";
 
   if (typeof data[topic] === "object" && !Array.isArray(data[topic])) {
@@ -395,8 +397,9 @@ function showSubtopics(topic) {
   currentSubtopic = null;
 
   container.innerHTML = "";
-  topicSelection.style.display = "none";
-  backButton.style.display = "block";
+topicSelection.classList.add("hidden");
+  backButton.classList.remove("hidden");
+
   backButton.innerText = "← Back to Topics";
 
   const subtopics = Object.keys(data[topic]);
@@ -454,22 +457,18 @@ function goBackToTopics() {
   const topicSelection = document.getElementById("topic-selection");
   const backButton = document.getElementById("back-to-topics");
 
-  // ← Logic here changes based on navigation depth
-  if (currentTopic && currentSubtopic) {
-    // We're in flashcards of a subtopic (e.g. vowels)
-    showSubtopics(currentTopic);
-    currentSubtopic = null;
-  } else if (currentTopic) {
-    // We're in subtopics list
-    currentTopic = null;
-    topicSelection.style.display = "flex";
-    backButton.style.display = "none";
-    flashcardContainer.innerHTML = "";
-  } else {
-    // Fallback: go to home
-    topicSelection.style.display = "flex";
-    backButton.style.display = "none";
-    flashcardContainer.innerHTML = "";
-  }
+if (currentTopic && currentSubtopic) {
+  showSubtopics(currentTopic);
+  currentSubtopic = null;
+} else if (currentTopic) {
+  currentTopic = null;
+  topicSelection.classList.remove("hidden");
+  backButton.classList.add("hidden");
+  flashcardContainer.innerHTML = "";
+} else {
+  topicSelection.classList.remove("hidden");
+  backButton.classList.add("hidden");
+  flashcardContainer.innerHTML = "";
+}
 }
 
