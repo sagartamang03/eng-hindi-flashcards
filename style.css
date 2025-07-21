@@ -208,3 +208,7 @@ h1 {
         font-size: 1.8em;
     }
 }
+
+.hidden {
+  display: none !important;
+}
