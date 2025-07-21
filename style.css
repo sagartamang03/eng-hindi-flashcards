@@ -166,3 +166,20 @@ h1 {
     font-size: 2em;
   }
 }
+
+
+.subtopic-button {
+  margin: 10px;
+  padding: 12px 20px;
+  background: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subtopic-button:hover {
+  background: #138496;
+}
