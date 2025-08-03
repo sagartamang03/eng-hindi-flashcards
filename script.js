@@ -1,75 +1,37 @@
 const data = {
- greetings: [
- ["Hello", "Namaste", "नमस्ते"],
- ["How are you?", "Aap kaise hain?", "आप कैसे हैं?"],
- ["I am fine", "Main theek hoon", "मैं ठीक हूँ"],
- ["Nice to meet you", "Aap se milkar khushi hui", "आपसे मिलकर खुशी हुई"],
- ["Goodbye", "Alvida", "अलविदा"],
- ["See you soon", "Jald hi milenge", "जल्द ही मिलेंगे"],
- ["See you again", "Phir milenge", "फिर मिलेंगे"],
- ["Take care", "Apna khayal rakhna", "अपना ख़याल रखना"],
- ["Thank you", "Dhanyavaad", "धन्यवाद"]
- ],
- introductions: [
- ["What is your name?", "Aapka naam kya hai?", "आपका नाम क्या है?"],
- ["My name is...", "Mera naam ... hai", "मेरा नाम ... है"],
- ["Where are you from?", "Aap kahan se hain?", "आप कहाँ से हैं?"],
- ["I am from...", "Main ... se hoon", "मैं ... से हूँ"],
- ["How old are you?", "Aapki umar kitni hai?", "आपकी उम्र कितनी है?"],
- ["I am ... years old", "Main ... saal ka hoon", "मैं ... साल का हूँ"],
- ["I am a student", "Main ek chhaatr hoon", "मैं एक छात्र हूँ"],
- ["What work do you do?", "Aap kya kaam karte hain?", "आप क्या काम करते हैं?"],
- ["I am a...", "Main ek ... hoon", "मैं एक ... हूँ"],
- ["This is my friend", "Yeh mera dost hai", "यह मेरा दोस्त है"],
- ["Where do you live?", "Aap kahan rehte hain?", "आप कहाँ रहते हैं?"],
- ["I live in...", "Main ... mein rehta hoon", "मैं ... में रहता हूँ"]
- ],
- routine: [
- ["I wake up at 6", "Main 6 baje uthta hoon", "मैं ६ बजे उठता हूँ"],
- ["I brush my teeth", "Main apne daant saaf karta hoon", "मैं अपने दाँत साफ़ करता हूँ"],
- ["I eat food", "Main khana khata hoon", "मैं खाना खाता हूँ"],
- ["I go to work", "Main kaam par jaata hoon", "मैं काम पर जाता हूँ"],
- ["I study in the evening", "Main shaam ko padhta hoon", "मैं शाम को पढ़ता हूँ"],
- ["I make food", "Main khana banata hoon", "मैं खाना बनाता हूँ"],
- ["I bathe", "Main nahata hoon", "मैं नहाता हूँ"],
- ["I sleep at 10", "Main 10 baje sota hoon", "मैं १० बजे सोता हूँ"],
- ["I relax", "Main aaram karta hoon", "मैं आराम करता हूँ"],
- ["I read books", "Main kitabein padhta hoon", "मैं किताबें पढ़ता हूँ"]
- ],
- food: [
- ["I'm hungry", "Mujhe bhook lagi hai", "मुझे भूख लगी है"],
- ["I'm thirsty", "Mujhe pyaas lagi hai", "मुझे प्यास लगी है"],
- ["I want water", "Mujhe paani chahiye", "मुझे पानी चाहिए"],
- ["Do you have tea?", "Kya aapke paas chai hai?", "क्या आपके पास चाय है?"],
- ["This is delicious", "Yeh swadisht hai", "यह स्वादिष्ट है"],
- ["I like spicy food", "Mujhe masaledaar khana pasand hai", "मुझे मसालेदार खाना पसंद है"],
- ["Vegetarian", "Shakahari", "शाकाहारी"],
- ["Meat", "Maans", "मांस"],
- ["Breakfast", "Naashta", "नाश्ता"],
- ["Dinner", "Raat ka khana", "रात का खाना"]
- ],
- travel: [
- ["Where is the bus station?", "Bus station kahan hai?", "बस स्टेशन कहाँ है?"],
- ["How much is the ticket?", "Ticket kitne ka hai?", "टिकट कितने का है?"],
- ["I need a taxi", "Mujhe taxi chahiye", "मुझे टैक्सी चाहिए"],
- ["I want to go to...", "Main ... jaana chahta hoon", "मैं ... जाना चाहता हूँ"],
- ["Is it far?", "Kya yeh door hai?", "क्या यह दूर है?"],
- ["Please stop here", "Kripya yahan rokiye", "कृपया यहाँ रोकिये"],
- ["How long will it take?", "Kitna samay lagega?", "कितना समय लगेगा?"],
- ["I am lost", "Main kho gaya hoon", "मैं खो गया हूँ"],
- ["Can you help me?", "Kya aap meri madad kar sakte hain?", "क्या आप मेरी मदद कर सकते हैं?"],
- ["I didn’t understand", "Main samjha nahin", "मैं समझा नहीं"],
- ["I understood", "Main samajh gaya", "मैं समझ गया"]
- ],
- shopping: [
- ["How much is this?", "Yeh kitne ka hai?", "यह कितने का है?"],
- ["It's too expensive", "Yeh bahut mehenga hai", "यह बहुत महंगा है"],
- ["Lower the price", "Daam kam kijiye", "दाम कम कीजिये"],
- ["I will take it", "Main yeh lunga", "मैं यह लूँगा"],
- ["I'm just looking", "Main sirf dekh raha hoon", "मैं सिर्फ देख रहा हूँ"],
- ["Do you have another color?", "Kya aapke paas doosra rang hai?", "क्या आपके पास दूसरा रंग है?"],
- ["Where can I pay?", "Main kahan bhugtaan kar sakta hoon?", "मैं कहाँ भुगतान कर सकता हूँ?"]
- ],
+
+ pronouns: {
+    subject: [
+      ["I", "Main", "मैं"],
+      ["You (informal)", "Tum", "तुम"],
+      ["You (formal)", "Aap", "आप"],
+      ["He", "Woh", "वह"],
+      ["She", "Woh", "वह"],
+      ["It", "Yeh / Woh", "यह / वह"],
+      ["We", "Hum", "हम"],
+      ["They", "Ve / Woh", "वे / वह"]
+    ],
+    object: [
+      ["to Me", "Mujhe / Mujhko", "मुझे / मुझको"],
+      ["to You (informal)", "Tumhe / Tumko", "तुम्हें / तुमको"],
+      ["to You (formal)", "Aapko", "आपको"],
+      ["to Him", "Usse / Usko", "उसे / उसको"],
+      ["to Her", "Usse / Usko", "उसे / उसको"],
+      ["to It", "Use / Usko", "उसे / उसको"],
+      ["to Us", "Humein / Humko", "हमें / हमको"],
+      ["to Them", "Unhe / Unko", "उन्हें / उनको"]
+    ],
+    possessive: [
+      ["My", "Mera / Meri / Mere", "मेरा / मेरी / मेरे"],
+      ["Your (informal)", "Tumhara / Tumhari / Tumhare", "तुम्हारा / तुम्हारी / तुम्हारे"],
+      ["Your (formal)", "Aapka / Aapki / Aapke", "आपका / आपकी / आपके"],
+      ["His", "Uska / Uski / Uske", "उसका / उसकी / उसके"],
+      ["Her", "Uska / Uski / Uske", "उसका / उसकी / उसके"],
+      ["Its", "Uska / Uski / Uske", "उसका / उसकी / उसके"],
+      ["Our", "Hamara / Hamari / Hamare", "हमारा / हमारी / हमारे"],
+      ["Their", "Unka / Unki / Unke", "उनका / उनकी / उनके"]
+    
+  ]},
  numbers: [
  ["1", "Ek", "एक"],
  ["2", "Do", "दो"],
@@ -96,49 +58,23 @@ const data = {
  ["300", "Teen sau", "तीन सौ"],
  ["400", "Chaar sau", "चार सौ"]
  ],
- family: [
- ["Family", "Parivaar", "परिवार"],
- ["Father", "Pita", "पिता"],
- ["Mother", "Maata", "माता"],
- ["Brother (elder/younger)", "Bada/Chhota bhai", "बड़ा/छोटा भाई"],
- ["Sister (elder/younger)", "Badi/Chhoti behen", "बड़ी/छोटी बहन"],
- ["Husband", "Pati", "पति"],
- ["Wife", "Patni", "पत्नी"],
- ["Son", "Beta", "बेटा"],
- ["Daughter", "Beti", "बेटी"],
- ["This is my father.", "Yeh mere pita hain.", "ये मेरे पिता हैं।"],
- ["This is my mother.", "Yeh meri maata hain.", "ये मेरी माता हैं।"],
- ["I have one brother.", "Mera ek bhai hai.", "मेरा एक भाई है।"],
- ["I have two sisters.", "Meri do behne hain.", "मेरी दो बहनें हैं।"],
- ["Do you have siblings?", "Kya aapke bhai-behen hain?", "क्या आपके भाई-बहन हैं?"],
- ["I live with my family.", "Main apne parivaar ke saath rehta hoon.", "मैं अपने परिवार के साथ रहता हूँ।"],
- ["My family is small.", "Mera parivaar chhota hai.", "मेरा परिवार छोटा है।"],
- ["What is your father's name?", "Aapke pita ka naam kya hai?", "आपके पिता का नाम क्या है?"],
- ["My mother's name is...", "Meri maata ka naam ... hai.", "मेरी माता का नाम ... है।"]
- ],
- health: [
- ["I feel sick", "Mujhe theek nahin lag raha hai", "मुझे ठीक नहीं लग रहा है"],
- ["I need a doctor", "Mujhe doctor ki zaroorat hai", "मुझे डॉक्टर की ज़रूरत है"],
- ["Where is the hospital?", "Aspataal kahan hai?", "अस्पताल कहाँ है?"],
- ["Help!", "Madad!", "मदद!"],
- ["Call the police", "Police ko bulao", "पुलिस को बुलाओ"],
- ["It hurts here", "Yahan dard ho raha hai", "यहाँ दर्द हो रहा है"],
- ["I have a headache", "Mere sar mein dard hai", "मेरे सर में दर्द है"]
- ],
- daysAndTime: [
- ["What time is it?", "Kitne baje hain?", "कितने बजे हैं?"],
- ["What day is it today?", "Aaj kaun sa din hai?", "आज कौन सा दिन है?"],
- ["Sunday", "Ravivaar", "रविवार"],
- ["Monday", "Somvaar", "सोमवार"],
- ["Tuesday", "Mangalvaar", "मंगलवार"],
- ["Wednesday", "Budhvaar", "बुधवार"],
- ["Thursday", "Guruvaar", "गुरुवार"],
- ["Friday", "Shukravaar", "शुक्रवार"],
- ["Saturday", "Shanivaar", "शनिवार"],
- ["Yesterday", "Kal", "कल"],
- ["Today", "Aaj", "आज"],
- ["Tomorrow", "Kal", "कल"]
- ],
+ 
+ 
+daysAndTime: {
+    daysAndWeeks: [
+      ["Sunday", "Ravivaar", "रविवार"],
+      ["Monday", "Somvaar", "सोमवार"],
+      ["Tuesday", "Mangalvaar", "मंगलवार"],
+      ["Wednesday", "Budhvaar", "बुधवार"],
+      ["Thursday", "Guruvaar", "गुरुवार"],
+      ["Friday", "Shukravaar", "शुक्रवार"],
+      ["Saturday", "Shanivaar", "शनिवार"]
+    ],
+    timeAndClocks: [
+      // You can add time-related words here like ["Hour", "Ghanta", "घंटा"]
+    ]
+  }
+,
  weather: [
  ["How's the weather?", "Mausam kaisa hai?", "मौसम कैसा है?"],
  ["It is sunny", "Dhoop hai", "धूप है"],
@@ -154,20 +90,189 @@ const data = {
  ["I am tired", "Main thak gaya hoon", "मैं थक गया हूँ"],
  ["I am excited", "Main utsaahit hoon", "मैं उत्साहित हूँ"]
  ],
- wantSentences: [
- ["I want tea.", "Mujhe chai chahiye.", "मुझे चाय चाहिए।"],
- ["She wants to dance.", "Vah naachna chahti hai.", "वह नाचना चाहती है।"],
- ["They want to go home.", "Ve ghar jaana chahte hain.", "वे घर जाना चाहते हैं।"],
- ["I don't want food.", "Mujhe khana nahin chahiye.", "मुझे खाना नहीं चाहिए।"],
- ["He doesn't want to sleep.", "Vah sona nahin chahta hai.", "वह सोना नहीं चाहता है।"],
- ["They don't want to study.", "Ve padhna nahin chahte hain.", "वे पढ़ना नहीं चाहते हैं।"],
- ["Do you want coffee?", "Kya aapko coffee chahiye?", "क्या आपको कॉफ़ी चाहिए?"],
- ["Does she want to come?", "Kya vah aana chahti hai?", "क्या वह आना चाहती है?"],
- ["Do they want water?", "Kya unhe paani chahiye?", "क्या उन्हें पानी चाहिए?"],
- ["What do you want?", "Aapko kya chahiye?", "आपको क्या चाहिए?"],
- ["Why do you want to go?", "Aap kyon jaana chahte hain?", "आप क्यों जाना चाहते हैं?"],
- ["Who do you want to meet?", "Aap kis se milna chahte hain?", "आप किससे मिलना चाहते हैं?"]
- ],
+tenses: {
+  presentTense: {
+    presentSimple: {
+      positive: [
+        ["I eat", "Main khaata hoon", "मैं खाता हूँ"],
+        ["You eat", "Tum khaate ho", "तुम खाते हो"],
+        ["He eats", "Woh khata hai", "वह खाता है"],
+        ["We eat", "Hum khate hain", "हम खाते हैं"],
+        ["They eat", "Ve khate hain", "वे खाते हैं"]
+      ],
+      negative: [
+        ["I do not eat", "Main nahi khaata hoon", "मैं नहीं खाता हूँ"],
+        ["You do not eat", "Tum nahi khaate ho", "तुम नहीं खाते हो"],
+        ["He does not eat", "Woh nahi khata hai", "वह नहीं खाता है"],
+        ["We do not eat", "Hum nahi khate hain", "हम नहीं खाते हैं"],
+        ["They do not eat", "Ve nahi khate hain", "वे नहीं खाते हैं"]
+      ],
+      questions: [
+        ["Do I eat?", "Kya main khaata hoon?", "क्या मैं खाता हूँ?"],
+        ["Do you eat?", "Kya tum khaate ho?", "क्या तुम खाते हो?"],
+        ["Does he eat?", "Kya woh khata hai?", "क्या वह खाता है?"],
+        ["Do we eat?", "Kya hum khate hain?", "क्या हम खाते हैं?"],
+        ["Do they eat?", "Kya ve khate hain?", "क्या वे खाते हैं?"]
+      ]
+    },
+    presentContinuous: {
+      positive: [
+        ["I am eating", "Main kha raha hoon", "मैं खा रहा हूँ"],
+        ["You are eating", "Tum kha rahe ho", "तुम खा रहे हो"],
+        ["He is eating", "Woh kha raha hai", "वह खा रहा है"],
+        ["We are eating", "Hum kha rahe hain", "हम खा रहे हैं"],
+        ["They are eating", "Ve kha rahe hain", "वे खा रहे हैं"]
+      ],
+      negative: [
+        ["I am not eating", "Main nahi kha raha hoon", "मैं नहीं खा रहा हूँ"],
+        ["You are not eating", "Tum nahi kha rahe ho", "तुम नहीं खा रहे हो"],
+        ["He is not eating", "Woh nahi kha raha hai", "वह नहीं खा रहा है"],
+        ["We are not eating", "Hum nahi kha rahe hain", "हम नहीं खा रहे हैं"],
+        ["They are not eating", "Ve nahi kha rahe hain", "वे नहीं खा रहे हैं"]
+      ],
+      questions: [
+        ["Am I eating?", "Kya main kha raha hoon?", "क्या मैं खा रहा हूँ?"],
+        ["Are you eating?", "Kya tum kha rahe ho?", "क्या तुम खा रहे हो?"],
+        ["Is he eating?", "Kya woh kha raha hai?", "क्या वह खा रहा है?"],
+        ["Are we eating?", "Kya hum kha rahe hain?", "क्या हम खा रहे हैं?"],
+        ["Are they eating?", "Kya ve kha rahe hain?", "क्या वे खा रहे हैं?"]
+      ]
+    }
+  },
+  pastTense: {
+    pastSimple: {
+      positive: [
+        ["I ate", "Maine khaya", "मैंने खाया"],
+        ["You ate", "Tumne khaya", "तुमने खाया"],
+        ["He ate", "Usne khaya", "उसने खाया"],
+        ["We ate", "Humne khaya", "हमने खाया"],
+        ["They ate", "Unhone khaya", "उन्होंने खाया"]
+      ],
+      negative: [
+        ["I did not eat", "Maine nahi khaya", "मैंने नहीं खाया"],
+        ["You did not eat", "Tumne nahi khaya", "तुमने नहीं खाया"],
+        ["He did not eat", "Usne nahi khaya", "उसने नहीं खाया"],
+        ["We did not eat", "Humne nahi khaya", "हमने नहीं खाया"],
+        ["They did not eat", "Unhone nahi khaya", "उन्होंने नहीं खाया"]
+      ],
+      questions: [
+        ["Did I eat?", "Kya maine khaya?", "क्या मैंने खाया?"],
+        ["Did you eat?", "Kya tumne khaya?", "क्या तुमने खाया?"],
+        ["Did he eat?", "Kya usne khaya?", "क्या उसने खाया?"],
+        ["Did we eat?", "Kya humne khaya?", "क्या हमने खाया?"],
+        ["Did they eat?", "Kya unhone khaya?", "क्या उन्होंने खाया?"]
+      ]
+    },
+    pastContinuous: {
+      positive: [
+        ["I was eating", "Main kha raha tha", "मैं खा रहा था"],
+        ["You were eating", "Tum kha rahe the", "तुम खा रहे थे"],
+        ["He was eating", "Woh kha raha tha", "वह खा रहा था"],
+        ["We were eating", "Hum kha rahe the", "हम खा रहे थे"],
+        ["They were eating", "Ve kha rahe the", "वे खा रहे थे"]
+      ],
+      negative: [
+        ["I was not eating", "Main nahi kha raha tha", "मैं नहीं खा रहा था"],
+        ["You were not eating", "Tum nahi kha rahe the", "तुम नहीं खा रहे थे"],
+        ["He was not eating", "Woh nahi kha raha tha", "वह नहीं खा रहा था"],
+        ["We were not eating", "Hum nahi kha rahe the", "हम नहीं खा रहे थे"],
+        ["They were not eating", "Ve nahi kha rahe the", "वे नहीं खा रहे थे"]
+      ],
+      questions: [
+        ["Was I eating?", "Kya main kha raha tha?", "क्या मैं खा रहा था?"],
+        ["Were you eating?", "Kya tum kha rahe the?", "क्या तुम खा रहे थे?"],
+        ["Was he eating?", "Kya woh kha raha tha?", "क्या वह खा रहा था?"],
+        ["Were we eating?", "Kya hum kha rahe the?", "क्या हम खा रहे थे?"],
+        ["Were they eating?", "Kya ve kha rahe the?", "क्या वे खा रहे थे?"]
+      ]
+    }
+  },
+  futureTense: {
+    futureSimple: {
+      positive: [
+        ["I will eat", "Main khaaunga", "मैं खाऊंगा"],
+        ["You will eat", "Tum khaaoge", "तुम खाओगे"],
+        ["He will eat", "Woh khaaega", "वह खाएगा"],
+        ["We will eat", "Hum khaaenge", "हम खाएंगे"],
+        ["They will eat", "Ve khaaenge", "वे खाएंगे"]
+      ],
+      negative: [
+        ["I will not eat", "Main nahi khaaunga", "मैं नहीं खाऊंगा"],
+        ["You will not eat", "Tum nahi khaaoge", "तुम नहीं खाओगे"],
+        ["He will not eat", "Woh nahi khaaega", "वह नहीं खाएगा"],
+        ["We will not eat", "Hum nahi khaaenge", "हम नहीं खाएंगे"],
+        ["They will not eat", "Ve nahi khaaenge", "वे नहीं खाएंगे"]
+      ],
+      questions: [
+        ["Will I eat?", "Kya main khaaunga?", "क्या मैं खाऊंगा?"],
+        ["Will you eat?", "Kya tum khaaoge?", "क्या तुम खाओगे?"],
+        ["Will he eat?", "Kya woh khaaega?", "क्या वह खाएगा?"],
+        ["Will we eat?", "Kya hum khaaenge?", "क्या हम खाएंगे?"],
+        ["Will they eat?", "Kya ve khaaenge?", "क्या वे खाएंगे?"]
+      ]
+    },
+    futureContinuous: {
+      positive: [
+        ["I will be eating", "Main kha raha honga", "मैं खा रहा होगा"],
+        ["You will be eating", "Tum kha rahe hoge", "तुम खा रहे होगे"],
+        ["He will be eating", "Woh kha raha hoga", "वह खा रहा होगा"],
+        ["We will be eating", "Hum kha rahe honge", "हम खा रहे होंगे"],
+        ["They will be eating", "Ve kha rahe honge", "वे खा रहे होंगे"]
+      ],
+      negative: [
+        ["I will not be eating", "Main nahi kha raha honga", "मैं नहीं खा रहा होगा"],
+        ["You will not be eating", "Tum nahi kha rahe hoge", "तुम नहीं खा रहे होगे"],
+        ["He will not be eating", "Woh nahi kha raha hoga", "वह नहीं खा रहा होगा"],
+        ["We will not be eating", "Hum nahi kha rahe honge", "हम नहीं खा रहे होंगे"],
+        ["They will not be eating", "Ve nahi kha rahe honge", "वे नहीं खा रहे होंगे"]
+      ],
+      questions: [
+        ["Will I be eating?", "Kya main kha raha honga?", "क्या मैं खा रहा होगा?"],
+        ["Will you be eating?", "Kya tum kha rahe hoge?", "क्या तुम खा रहे होगे?"],
+        ["Will he be eating?", "Kya woh kha raha hoga?", "क्या वह खा रहा होगा?"],
+        ["Will we be eating?", "Kya hum kha rahe honge?", "क्या हम खा रहे होंगे?"],
+        ["Will they be eating?", "Kya ve kha rahe honge?", "क्या वे खा रहे होंगे?"]
+      ]
+    }
+  }
+}
+,
+wantSentences: {
+  want: {
+    affirmative: [
+      ["I want tea.", "Mujhe chai chahiye.", "मुझे चाय चाहिए।"],
+            ["I need water.", "Mujhe paani ki zaroorat hai.", "मुझे पानी की ज़रूरत है।"],
+      ["She needs help.", "Use madad ki zaroorat hai.", "उसे मदद की ज़रूरत है।"],
+      ["They need a taxi.", "Unhe taxi ki zaroorat hai.", "उन्हें टैक्सी की ज़रूरत है।"],
+    ],
+    negative: [
+      ["I don't want food.", "Mujhe khana nahin chahiye.", "मुझे खाना नहीं चाहिए।"],
+      ["I don't need anything.", "Mujhe kuch nahin chahiye.", "मुझे कुछ नहीं चाहिए।"]
+    ],
+    questions: [
+      ["Do you want coffee?", "Kya aapko coffee chahiye?", "क्या आपको कॉफ़ी चाहिए?"],
+      ["What do you want?", "Aapko kya chahiye?", "आपको क्या चाहिए?"],
+      ["Do you need anything?", "Kya aapko kuch chahiye?", "क्या आपको कुछ चाहिए?"],
+      ["What do you need?", "Aapko kya chahiye?", "आपको क्या चाहिए?"],
+    ]
+  },
+  "want To": {
+    affirmative: [
+      ["She wants to dance.", "Vah naachna chahti hai.", "वह नाचना चाहती है।"],
+      ["They want to go home.", "Ve ghar jaana chahte hain.", "वे घर जाना चाहते हैं।"]
+    ],
+    negative: [
+      ["He doesn't want to sleep.", "Vah sona nahin chahta hai.", "वह सोना नहीं चाहता है।"],
+      ["They don't want to study.", "Ve padhna nahin chahte hain.", "वे पढ़ना नहीं चाहते हैं।"]
+    ],
+    questions: [
+      ["Does she want to come?", "Kya vah aana chahti hai?", "क्या वह आना चाहती है?"],
+      ["Why do you want to go?", "Aap kyon jaana chahte hain?", "आप क्यों जाना चाहते हैं?"],
+      ["Who do you want to meet?", "Aap kis se milna chahte hain?", "आप किससे मिलना चाहते हैं?"]
+    ]
+  }
+}
+,
  haveSentences: [
  ["I have a book.", "Mere paas ek kitaab hai.", "मेरे पास एक किताब है।"],
  ["She has a pen.", "Uske paas ek kalam hai.", "उसके पास एक कलम है।"],
@@ -189,14 +294,8 @@ const data = {
  ["Do you like spicy food?", "Kya aapko masaledaar khana pasand hai?", "क्या आपको मसालेदार खाना पसंद है?"],
  ["What do you like?", "Aapko kya pasand hai?", "आपको क्या पसंद है?"]
  ],
- needSentences: [
- ["I need water.", "Mujhe paani ki zaroorat hai.", "मुझे पानी की ज़रूरत है।"],
- ["She needs help.", "Use madad ki zaroorat hai.", "उसे मदद की ज़रूरत है।"],
- ["They need a taxi.", "Unhe taxi ki zaroorat hai.", "उन्हें टैक्सी की ज़रूरत है।"],
- ["I don't need anything.", "Mujhe kuch nahin chahiye.", "मुझे कुछ नहीं चाहिए।"],
- ["Do you need anything?", "Kya aapko kuch chahiye?", "क्या आपको कुछ चाहिए?"],
- ["What do you need?", "Aapko kya chahiye?", "आपको क्या चाहिए?"]
- ],
+
+ 
  canSentences: [
  ["I can speak Hindi.", "Main Hindi bol sakta hoon.", "मैं हिंदी बोल सकता हूँ।"],
  ["She can swim.", "Vah tair sakti hai.", "वह तैर सकती है।"],
@@ -213,6 +312,7 @@ const data = {
  ["You should not worry.", "Aapko chinta nahin karni chahiye.", "आपको चिंता नहीं करनी चाहिए।"],
  ["What should I do?", "Mujhe kya karna chahiye?", "मुझे क्या करना चाहिए?"]
  ],
+
  commands: [
  ["Come here.", "Yahan aao.", "यहाँ आओ।"],
  ["Go there.", "Wahan jao.", "वहाँ जाओ।"],
@@ -222,61 +322,184 @@ const data = {
  ["Give me that.", "Mujhe woh do.", "मुझे वह दो।"],
  ["Don't do that.", "Woh mat karo.", "वह मत करो।"]
  ],
- verbs: [
- ["To eat", "Khana", "खाना"],
- ["To go", "Jaana", "जाना"],
- ["To come", "Aana", "आना"],
- ["To sleep", "Sona", "सोना"],
- ["To write", "Likhna", "लिखना"],
- ["To speak", "Bolna", "बोलना"],
- ["To walk", "Chalna", "चलना"],
- ["To live", "Rehna", "रहना"]
- ],
- nouns: [
- ["House", "Ghar", "घर"],
- ["Book", "Kitaab", "किताब"],
- ["Pen", "Kalam", "कलम"],
- ["Water", "Paani", "पानी"],
- ["Food", "Khaana", "खाना"],
- ["Chair", "Kursi", "कुर्सी"],
- ["Teacher", "Adhyaapak", "अध्यापक"]
- ],
- adjectives: [
- ["Big", "Bada", "बड़ा"],
- ["Small", "Chhota", "छोटा"],
- ["Beautiful", "Sundar", "सुंदर"],
- ["Hot", "Garam", "गरम"],
- ["Cold", "Thanda", "ठंडा"],
- ["Happy", "Khush", "खुश"],
- ["Fast", "Tez", "तेज़"]
- ],
- adverbs: [
- ["Quickly", "Jaldi", "जल्दी"],
- ["Slowly", "Dheere", "धीरे"],
- ["Always", "Hamesha", "हमेशा"],
- ["Never", "Kabhi nahin", "कभी नहीं"],
- ["Today", "Aaj", "आज"],
- ["Yesterday", "Kal", "कल"],
- ["Tomorrow", "Kal", "कल"]
- ],
- prepositions: [
- ["On", "Par", "पर"],
- ["Under", "Neeche", "नीचे"],
- ["In", "Mein", "में"],
- ["Out", "Baahar", "बाहर"],
- ["Beside", "Bagal mein", "बगल में"],
- ["Between", "Beech mein", "बीच में"],
- ["Near", "Paas", "पास"]
- ],
- conjunctions: [
- ["And", "Aur", "और"],
- ["But", "Lekin", "लेकिन"],
- ["Because", "Kyonki", "क्योंकि"],
- ["If", "Agar", "अगर"],
- ["Although", "Haalaanki", "हालांकि"],
- ["So", "Isliye", "इसलिए"],
- ["Or", "Ya", "या"]
- ],
+verbs: {
+  movement: [
+    ["To go", "Jaana", "जाना"],
+    ["To come", "Aana", "आना"],
+    ["To walk", "Chalna", "चलना"],
+    ["To run", "Daudna", "दौड़ना"],
+    ["To live", "Rehna", "रहना"]
+  ],
+  senses: [
+    ["To see", "Dekhna", "देखना"],
+    ["To hear", "Sunnna", "सुनना"],
+    ["To eat", "Khana", "खाना"],
+    ["To drink", "Peena", "पीना"],
+    ["To smell", "Sungna", "सूंघना"]  // Added to make 5 in this category
+  ],
+  communication: [
+    ["To speak", "Bolna", "बोलना"],
+    ["To write", "Likhna", "लिखना"],
+    ["To read", "Padhna", "पढ़ना"],
+    ["To listen", "Sunna", "सुनना"],  // Alternative form from "hear"
+    ["To tell", "Batana", "बताना"]   // Added for variety
+  ],
+  physicalActions: [
+    ["To make/do", "Karna", "करना"],
+    ["To take", "Lena", "लेना"],
+    ["To give", "Dena", "देना"],
+    ["To open", "Kholna", "खोलना"],
+    ["To close", "Band karna", "बंद करना"]
+  ],
+  dailyActivities: [
+    ["To sleep", "Sona", "सोना"],
+    ["To wake up", "Jaagna", "जागना"],
+    ["To bathe", "Nahna", "नहाना"],
+    ["To cook", "Pakana", "पकाना"],
+    ["To study", "Padhna", "पढ़ना"]
+  ]
+}
+,
+nouns: {
+  "Household Items": [
+    ["House", "Ghar", "घर"],
+    ["Chair", "Kursi", "कुर्सी"],
+    ["Table", "Mez", "मेज़"],
+    ["Door", "Dwaar / Darwaaza", "द्वार / दरवाज़ा"],
+    ["Window", "Khidki", "खिड़की"],
+    ["Bed", "Palang", "पलंग"],
+    ["Fan", "Pankha", "पंखा"],
+    ["Light", "Roshni / Bulb", "रोशनी / बल्ब"]
+  ],
+  "School Supplies": [
+    ["Book", "Kitaab", "किताब"],
+    ["Pen", "Kalam", "कलम"],
+    ["Pencil", "Pencil", "पेंसिल"],
+    ["Notebook", "Copy", "कॉपी"],
+    ["Eraser", "Rubber", "रबर"],
+    ["Bag", "Basta", "बस्ता"],
+    ["Board", "Board", "बोर्ड"],
+    ["Marker", "Marker", "मार्कर"]
+  ],
+  "Essentials": [
+    ["Water", "Paani", "पानी"],
+    ["Food", "Khaana", "खाना"],
+    ["Milk", "Doodh", "दूध"],
+    ["Bread", "Double Roti", "डबल रोटी"],
+    ["Salt", "Namak", "नमक"],
+    ["Sugar", "Cheeni", "चीनी"],
+    ["Oil", "Tel", "तेल"],
+    ["Rice", "Chawal", "चावल"]
+  ],
+  "People": [
+    ["Teacher", "Adhyaapak", "अध्यापक"],
+    ["Student", "Chhaatra", "छात्र"],
+    ["Mother", "Maa", "माँ"],
+    ["Father", "Pita", "पिता"],
+    ["Brother", "Bhai", "भाई"],
+    ["Sister", "Behen", "बहन"],
+    ["Friend", "Dost", "दोस्त"],
+    ["Child", "Baccha", "बच्चा"]
+  ]
+}
+,
+adjectives: {
+  size: [
+    ["Big", "Bada", "बड़ा"],
+    ["Small", "Chhota", "छोटा"],
+    ["Tall", "Lamba", "लंबा"],
+    ["Short", "Naata", "नाटा"],
+    ["Huge", "Bahut Bada", "बहुत बड़ा"]
+  ],
+  appearance: [
+    ["Beautiful", "Sundar", "सुंदर"],
+    ["Ugly", "Bikaar", "बिकर"],
+    ["Clean", "Saaf", "साफ़"],
+    ["Dirty", "Ganda", "गंदा"],
+    ["Smart", "Chatur", "चतुर"]
+  ],
+  temperature: [
+    ["Hot", "Garam", "गरम"],
+    ["Cold", "Thanda", "ठंडा"],
+    ["Warm", "Naram Garam", "नरम गरम"],
+    ["Cool", "Thanda Sa", "ठंडा सा"],
+    ["Freezing", "Jamne Wala", "जमने वाला"]
+  ],
+  emotions: [
+    ["Happy", "Khush", "खुश"],
+    ["Sad", "Udaas", "उदास"],
+    ["Angry", "Gussa", "गुस्सा"],
+    ["Excited", "Utejit", "उत्साहित"],
+    ["Scared", "Dara Hua", "डरा हुआ"]
+  ],
+  speed: [
+    ["Fast", "Tez", "तेज़"],
+    ["Slow", "Dheere", "धीरे"],
+    ["Quick", "Jaldi", "जल्दी"],
+    ["Speedy", "Teevr", "तीव्र"],
+    ["Sluggish", "Sust", "सुस्त"]
+  ]
+}
+
+,
+adverbs: {
+  manner: [
+    ["Quickly", "Jaldi", "जल्दी"],
+    ["Slowly", "Dheere", "धीरे"],
+    ["Carefully", "Savdhaani se", "सावधानी से"],
+    ["Loudly", "Zor se", "ज़ोर से"],
+    ["Silently", "Chupchaap", "चुपचाप"]
+  ],
+  frequency: [
+    ["Always", "Hamesha", "हमेशा"],
+    ["Never", "Kabhi nahin", "कभी नहीं"],
+    ["Often", "Aksar", "अक्सर"],
+    ["Sometimes", "Kabhi kabhi", "कभी कभी"],
+    ["Rarely", "Kabhi kabhaar", "कभी कभार"]
+  ],
+  time: [
+    ["Today", "Aaj", "आज"],
+    ["Yesterday", "Kal", "कल"],
+    ["Tomorrow", "Kal", "कल"],
+    ["Now", "Abhi", "अभी"],
+    ["Later", "Baad mein", "बाद में"]
+  ]
+}
+,
+prepositions: {
+  place: [
+    ["On", "Par", "पर"],
+    ["Under", "Neeche", "नीचे"],
+    ["In", "Mein", "में"],
+    ["Out", "Baahar", "बाहर"],
+    ["Beside", "Bagal mein", "बगल में"]
+  ],
+  position: [
+    ["Between", "Beech mein", "बीच में"],
+    ["Near", "Paas", "पास"],
+    ["Over", "Upar", "ऊपर"],
+    ["Behind", "Peeche", "पीछे"],
+    ["In front of", "Ke saamne", "के सामने"]
+  ]
+}
+,
+ conjunctions: {
+  coordination: [
+    ["And", "Aur", "और"],
+    ["But", "Lekin", "लेकिन"],
+    ["Or", "Ya", "या"],
+    ["Nor", "Na to", "ना तो"],
+    ["Yet", "Phir bhi", "फिर भी"]
+  ],
+  subordination: [
+    ["Because", "Kyonki", "क्योंकि"],
+    ["If", "Agar", "अगर"],
+    ["Although", "Haalaanki", "हालांकि"],
+    ["Since", "Jab se", "जब से"],
+    ["While", "Jab tak", "जब तक"]
+  ]
+}
+,
  questionWords: [
  ["What", "Kya", "क्या"],
  ["Where", "Kahan", "कहाँ"],
@@ -325,7 +548,7 @@ consonants: [
   ["Roti", "Roti", "रोटी"],
   ["Doodh", "Doodh", "दूध"],
   ["Pustak", "Pustak", "पुस्तक"],
-  ["Mez", "Mez", "मेज़"],
+  ["Mez", "Mez", "मेज़"],
   ["Kursi", "Kursi", "कुर्सी"]
 ],
 
@@ -334,141 +557,113 @@ consonants: [
     ]
   }
 };
+let currentPath = [];
 
-let currentTopic = null;
-let currentSubtopic = null;
-
-function showTopic(topic) {
-  const flashcardContainer = document.getElementById("flashcards");
+function showFlashcardsAtPath(path = []) {
+  const container = document.getElementById("flashcards");
   const topicSelection = document.getElementById("topic-selection");
   const backButton = document.getElementById("back-to-topics");
 
-  currentTopic = topic;
-  currentSubtopic = null;
-
-  flashcardContainer.innerHTML = "";
-topicSelection.classList.add("hidden");
+  // Hide main topic selection once inside data
+  topicSelection.classList.add("hidden");
   backButton.classList.remove("hidden");
 
-  backButton.innerText = "← Back to Topics";
-
-  if (typeof data[topic] === "object" && !Array.isArray(data[topic])) {
-    showSubtopics(topic);
-    return;
+  // Traverse data object by path
+  let node = data;
+  for (const key of path) {
+    if (node && typeof node === "object" && key in node) {
+      node = node[key];
+    } else {
+      container.innerHTML = "<p>No data found at this path.</p>";
+      backButton.innerText = "← Back";
+      return;
+    }
   }
 
-  data[topic].forEach(([eng, roman, devanagari]) => {
-    const card = document.createElement("div");
-    card.className = "card";
-card.innerHTML = currentTopic === "devanagariScript" ? `
-  <div class="card-inner">
-    <div class="card-front">
-      <span class="devanagari-script large">${devanagari}</span>
-    </div>
-    <div class="card-back">
-      <strong>${eng}</strong>
-      <span class="romanized-script">${roman}</span>
-    </div>
-  </div>
-` : `
-  <div class="card-inner">
-    <div class="card-front">
-      <strong>${eng}</strong>
-    </div>
-    <div class="card-back">
-      <span class="devanagari-script">${devanagari}</span>
-      <span class="romanized-script">${roman}</span>
-    </div>
-  </div>
-`;
+  container.innerHTML = ""; // Clear previous content
 
+  if (Array.isArray(node)) {
+    // We reached an array of flashcards - display cards
+    node.forEach(([eng, roman, devanagari]) => {
+      const card = document.createElement("div");
+      card.className = "card";
 
-    card.addEventListener("click", () => card.classList.toggle("flipped"));
-    flashcardContainer.appendChild(card);
-  });
+      // Customize for devanagariScript topic if you want:
+      if (path[0] === "devanagariScript") {
+        card.innerHTML = `
+          <div class="card-inner">
+            <div class="card-front">
+              <span class="devanagari-script large">${devanagari}</span>
+            </div>
+            <div class="card-back">
+              <strong>${eng}</strong>
+              <span class="romanized-script">${roman}</span>
+            </div>
+          </div>
+        `;
+      } else {
+        card.innerHTML = `
+          <div class="card-inner">
+            <div class="card-front">
+              <strong>${eng}</strong>
+            </div>
+            <div class="card-back">
+              <span class="devanagari-script">${devanagari}</span>
+              <span class="romanized-script">${roman}</span>
+            </div>
+          </div>
+        `;
+      }
+
+      card.addEventListener("click", () => card.classList.toggle("flipped"));
+      container.appendChild(card);
+    });
+
+    backButton.innerText = "← Back";
+  } else if (typeof node === "object" && node !== null) {
+    // Node is an object - show buttons for subtopics/keys
+    Object.keys(node).forEach(subkey => {
+      const btn = document.createElement("button");
+      btn.className = "subtopic-button";
+      btn.innerText = subkey.charAt(0).toUpperCase() + subkey.slice(1);
+      btn.onclick = () => {
+        currentPath.push(subkey);
+        showFlashcardsAtPath(currentPath);
+      };
+      container.appendChild(btn);
+    });
+
+    backButton.innerText = "← Back";
+  } else {
+    container.innerHTML = "<p>Invalid data format.</p>";
+    backButton.innerText = "← Back";
+  }
 }
 
-function showSubtopics(topic) {
-  const container = document.getElementById("flashcards");
-  const topicSelection = document.getElementById("topic-selection");
-  const backButton = document.getElementById("back-to-topics");
-
-  currentTopic = topic;
-  currentSubtopic = null;
-
-  container.innerHTML = "";
-topicSelection.classList.add("hidden");
-  backButton.classList.remove("hidden");
-
-  backButton.innerText = "← Back to Topics";
-
-  const subtopics = Object.keys(data[topic]);
-  subtopics.forEach(sub => {
-    const button = document.createElement("button");
-    button.className = "subtopic-button";
-    button.innerText = sub.charAt(0).toUpperCase() + sub.slice(1);
-    button.onclick = () => showSubtopicFlashcards(topic, sub);
-    container.appendChild(button);
-  });
-}
-
-function showSubtopicFlashcards(topic, subtopic) {
-  const container = document.getElementById("flashcards");
-  const backButton = document.getElementById("back-to-topics");
-
-  currentTopic = topic;
-  currentSubtopic = subtopic;
-
-  container.innerHTML = "";
-  backButton.innerText = "← Back to Devanagari Script";
-
-  data[topic][subtopic].forEach(([eng, roman, devanagari]) => {
-    const card = document.createElement("div");
-    card.className = "card";
-card.innerHTML = currentTopic === "devanagariScript" ? `
-  <div class="card-inner">
-    <div class="card-front">
-      <span class="devanagari-script large">${devanagari}</span>
-    </div>
-    <div class="card-back">
-      <strong>${eng}</strong>
-      <span class="romanized-script">${roman}</span>
-    </div>
-  </div>
-` : `
-  <div class="card-inner">
-    <div class="card-front">
-      <strong>${eng}</strong>
-    </div>
-    <div class="card-back">
-      <span class="devanagari-script">${devanagari}</span>
-      <span class="romanized-script">${roman}</span>
-    </div>
-  </div>
-`;
-
-    card.addEventListener("click", () => card.classList.toggle("flipped"));
-    container.appendChild(card);
-  });
+function showTopic(topic) {
+  currentPath = [topic];
+  showFlashcardsAtPath(currentPath);
 }
 
 function goBackToTopics() {
-  const flashcardContainer = document.getElementById("flashcards");
   const topicSelection = document.getElementById("topic-selection");
   const backButton = document.getElementById("back-to-topics");
+  const container = document.getElementById("flashcards");
 
-if (currentTopic && currentSubtopic) {
-  showSubtopics(currentTopic);
-  currentSubtopic = null;
-} else if (currentTopic) {
-  currentTopic = null;
-  topicSelection.classList.remove("hidden");
-  backButton.classList.add("hidden");
-  flashcardContainer.innerHTML = "";
-} else {
-  topicSelection.classList.remove("hidden");
-  backButton.classList.add("hidden");
-  flashcardContainer.innerHTML = "";
+  if (currentPath.length > 1) {
+    // Go back one level in the path
+    currentPath.pop();
+    showFlashcardsAtPath(currentPath);
+  } else if (currentPath.length === 1) {
+    // Back to main topics list
+    currentPath = [];
+    container.innerHTML = "";
+    topicSelection.classList.remove("hidden");
+    backButton.classList.add("hidden");
+  } else {
+    // Already at main topics
+    container.innerHTML = "";
+    topicSelection.classList.remove("hidden");
+    backButton.classList.add("hidden");
+  }
 }
-}
-
