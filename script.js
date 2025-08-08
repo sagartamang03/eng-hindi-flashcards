@@ -5,11 +5,11 @@ const data = {
       ["I", "Main", "मैं"],
       ["You (informal)", "Tum", "तुम"],
       ["You (formal)", "Aap", "आप"],
-      ["He", "Woh", "वह"],
-      ["She", "Woh", "वह"],
-      ["It", "Yeh / Woh", "यह / वह"],
+      ["He", "ye / vo", "ये / वो"],
+      ["She", "ye / vo", "ये / वो"],
+      ["It", "Ye", "ये"],
       ["We", "Hum", "हम"],
-      ["They", "Ve / Woh", "वे / वह"]
+      ["They", "Ye / vo", "ये / वो"]
     ],
     object: [
       ["to Me", "Mujhe / Mujhko", "मुझे / मुझको"],
@@ -30,8 +30,22 @@ const data = {
       ["Its", "Uska / Uski / Uske", "उसका / उसकी / उसके"],
       ["Our", "Hamara / Hamari / Hamare", "हमारा / हमारी / हमारे"],
       ["Their", "Unka / Unki / Unke", "उनका / उनकी / उनके"]
-    
-  ]},
+    ],
+    "reflexive": [
+  ["Own (singular masculine)", "Apna", "अपना"],
+  ["Own (singular feminine)", "Apni", "अपनी"],
+  ["Own (plural masculine or mixed)", "Apne", "अपने"],
+  ["Own (plural feminine)", "Apni", "अपनी"],
+  ["By oneself / Automatically", "Apne-aap", "अपनेआप"]
+],
+    unspecified:[
+      ["Someone", "Koi vyakti / Koi", "कोई व्यक्ति / कोई"],
+      ["Something", "Kuch / Koi vastu", "कुछ / कोई वस्तु"],
+      ["Anyone", "Koi bhi vyakti / Koi bhi", "कोई भी व्यक्ति / कोई भी"],
+      ["Anything", "Kuch bhi / Koi bhi vastu", "कुछ भी / कोई भी वस्तु"]
+    ],
+  
+  },
  numbers: [
  ["1", "Ek", "एक"],
  ["2", "Do", "दो"],
@@ -90,6 +104,70 @@ daysAndTime: {
  ["I am tired", "Main thak gaya hoon", "मैं थक गया हूँ"],
  ["I am excited", "Main utsaahit hoon", "मैं उत्साहित हूँ"]
  ],
+basicSentences: {
+  'present Tense - Is Am Are': {
+    positive: [
+    ["I am happy", "Main khush hoon", "मैं खुश हूँ"],
+    ["You are smart", "Tum samajhdaar ho", "तुम समझदार हो"],
+    ["He is tired", "Woh thaka hua hai", "वह थका हुआ है"],
+    ["We are ready", "Hum taiyaar hain", "हम तैयार हैं"],
+    ["They are here", "Ve yahan hain", "वे यहाँ हैं"]
+  ],
+  negative: [
+    ["I am not sad", "Main udaas nahi hoon", "मैं उदास नहीं हूँ"],
+    ["You are not late", "Tum der se nahi ho", "तुम देर से नहीं हो"],
+    ["He is not busy", "Woh vyast nahi hai", "वह व्यस्त नहीं है"],
+    ["We are not tired", "Hum thake hue nahi hain", "हम थके हुए नहीं हैं"],
+    ["They are not wrong", "Ve galat nahi hain", "वे गलत नहीं हैं"]
+  ],
+  questions: [
+    ["Am I right?", "Kya main sahi hoon?", "क्या मैं सही हूँ?"],
+    ["Are you okay?", "Kya tum theek ho?", "क्या तुम ठीक हो?"],
+    ["Is he here?", "Kya woh yahan hai?", "क्या वह यहाँ है?"],
+    ["Are we late?", "Kya hum der se hain?", "क्या हम देर से हैं?"],
+    ["Are they ready?", "Kya ve taiyaar hain?", "क्या वे तैयार हैं?"]
+  ],
+  whQuestions: [
+    ["Who am I?", "Main kaun hoon?", "मैं कौन हूँ?"],
+    ["What are you?", "Tum kya ho?", "तुम क्या हो?"],
+    ["Where is he?", "Woh kahan hai?", "वह कहाँ है?"],
+    ["Why are we here?", "Hum yahan kyun hain?", "हम यहाँ क्यों हैं?"],
+    ["When are they free?", "Ve kab free hain?", "वे कब फ्री हैं?"]
+  ]
+  },
+  'past Tense - Was Were': {
+  positive: [
+    ["I was happy", "Main khush tha/thii", "मैं खुश था/थी"],
+    ["You were smart", "Tum samajhdaar the", "तुम समझदार थे"],
+    ["He was tired", "Woh thaka hua tha", "वह थका हुआ था"],
+    ["We were ready", "Hum taiyaar the", "हम तैयार थे"],
+    ["They were here", "Ve yahan the", "वे यहाँ थे"]
+  ],
+  negative: [
+    ["I was not sad", "Main udaas nahi tha/thii", "मैं उदास नहीं था/थी"],
+    ["You were not late", "Tum der se nahi the", "तुम देर से नहीं थे"],
+    ["He was not busy", "Woh vyast nahi tha", "वह व्यस्त नहीं था"],
+    ["We were not tired", "Hum thake hue nahi the", "हम थके हुए नहीं थे"],
+    ["They were not wrong", "Ve galat nahi the", "वे गलत नहीं थे"]
+  ],
+  questions: [
+    ["Was I right?", "Kya main sahi tha/thii?", "क्या मैं सही था/थी?"],
+    ["Were you okay?", "Kya tum theek the?", "क्या तुम ठीक थे?"],
+    ["Was he here?", "Kya woh yahan tha?", "क्या वह यहाँ था?"],
+    ["Were we late?", "Kya hum der se the?", "क्या हम देर से थे?"],
+    ["Were they ready?", "Kya ve taiyaar the?", "क्या वे तैयार थे?"]
+  ],
+  whQuestions: [
+    ["Who was I?", "Main kaun tha/thii?", "मैं कौन था/थी?"],
+    ["What were you?", "Tum kya the?", "तुम क्या थे?"],
+    ["Where was he?", "Woh kahan tha?", "वह कहाँ था?"],
+    ["Why were we here?", "Hum yahan kyun the?", "हम यहाँ क्यों थे?"],
+    ["When were they free?", "Ve kab free the?", "वे कब फ्री थे?"]
+  ]
+}
+
+}
+,
 tenses: {
   presentTense: {
     presentSimple: {
@@ -112,8 +190,15 @@ tenses: {
         ["Do you eat?", "Kya tum khaate ho?", "क्या तुम खाते हो?"],
         ["Does he eat?", "Kya woh khata hai?", "क्या वह खाता है?"],
         ["Do we eat?", "Kya hum khate hain?", "क्या हम खाते हैं?"],
-        ["Do they eat?", "Kya ve khate hain?", "क्या वे खाते हैं?"]
-      ]
+        ["Do they eat?", "Kya ve khate hain?", "क्या वे खाते हैं?"],
+      ],
+       whQuestions: [
+    ["What do I eat?", "Main kya khaata hoon?", "मैं क्या खाता हूँ?"],
+    ["Where do you play?", "Tum kahan khelte ho?", "तुम कहाँ खेलते हो?"],
+    ["Why does he read?", "Woh kyun padhta hai?", "वह क्यों पढ़ता है?"],
+    ["When do we walk?", "Hum kab chalte hain?", "हम कब चलते हैं?"],
+    ["What do they write?", "Ve kya likhte hain?", "वे क्या लिखते हैं?"]
+  ]
     },
     presentContinuous: {
       positive: [
@@ -137,7 +222,35 @@ tenses: {
         ["Are we eating?", "Kya hum kha rahe hain?", "क्या हम खा रहे हैं?"],
         ["Are they eating?", "Kya ve kha rahe hain?", "क्या वे खा रहे हैं?"]
       ]
-    }
+    },
+    presentPerfect: {
+  positive: [
+    ["I have eaten", "Main kha chuka hoon", "मैं खा चुका हूँ"],
+    ["You have eaten", "Tum kha chuke ho", "तुम खा चुके हो"],
+    ["He has eaten", "Woh kha chuka hai", "वह खा चुका है"],
+    ["We have eaten", "Hum kha chuke hain", "हम खा चुके हैं"],
+    ["They have eaten", "Ve kha chuke hain", "वे खा चुके हैं"]
+  ],
+  negative: [
+    ["I have not eaten", "Main nahi kha chuka hoon", "मैं नहीं खा चुका हूँ"],
+    ["You have not eaten", "Tum nahi kha chuke ho", "तुम नहीं खा चुके हो"],
+    ["He has not eaten", "Woh nahi kha chuka hai", "वह नहीं खा चुका है"],
+    ["We have not eaten", "Hum nahi kha chuke hain", "हम नहीं खा चुके हैं"],
+    ["They have not eaten", "Ve nahi kha chuke hain", "वे नहीं खा चुके हैं"]
+  ],
+  questions: {
+  yesNo: [
+    ["Have you eaten?", "Kya tumne khaya hai?", "क्या तुमने खाया है?"],
+    ["Has she finished?", "Kya usne khatam kiya hai?", "क्या उसने खत्म किया है?"],
+    ["Have they arrived?", "Kya ve aa gaye hain?", "क्या वे आ गए हैं?"]
+  ],
+  wh: [
+    ["What have you done?", "Tumne kya kiya hai?", "तुमने क्या किया है?"],
+    ["Where have they gone?", "Ve kahaan gaye hain?", "वे कहाँ गए हैं?"],
+    ["Why has he left?", "Woh kyun chala gaya hai?", "वह क्यों चला गया है?"]
+  ]
+}
+},
   },
   pastTense: {
     pastSimple: {
@@ -185,7 +298,30 @@ tenses: {
         ["Were we eating?", "Kya hum kha rahe the?", "क्या हम खा रहे थे?"],
         ["Were they eating?", "Kya ve kha rahe the?", "क्या वे खा रहे थे?"]
       ]
-    }
+    },
+    "past Perfect": {
+  positive: [
+    ["I had eaten", "Main kha chuka tha", "मैं खा चुका था"],
+    ["You had eaten", "Tum kha chuke the", "तुम खा चुके थे"],
+    ["He had eaten", "Woh kha chuka tha", "वह खा चुका था"],
+    ["We had eaten", "Hum kha chuke the", "हम खा चुके थे"],
+    ["They had eaten", "Ve kha chuke the", "वे खा चुके थे"]
+  ],
+  negative: [
+    ["I had not eaten", "Main nahi kha chuka tha", "मैं नहीं खा चुका था"],
+    ["You had not eaten", "Tum nahi kha chuke the", "तुम नहीं खा चुके थे"],
+    ["He had not eaten", "Woh nahi kha chuka tha", "वह नहीं खा चुका था"],
+    ["We had not eaten", "Hum nahi kha chuke the", "हम नहीं खा चुके थे"],
+    ["They had not eaten", "Ve nahi kha chuke the", "वे नहीं खा चुके थे"]
+  ],
+  questions: [
+    ["Had I eaten?", "Kya main kha chuka tha?", "क्या मैं खा चुका था?"],
+    ["Had you eaten?", "Kya tum kha chuke the?", "क्या तुम खा चुके थे?"],
+    ["Had he eaten?", "Kya woh kha chuka tha?", "क्या वह खा चुका था?"],
+    ["Had we eaten?", "Kya hum kha chuke the?", "क्या हम खा चुके थे?"],
+    ["Had they eaten?", "Kya ve kha chuke the?", "क्या वे खा चुके थे?"]
+  ]
+},
   },
   futureTense: {
     futureSimple: {
@@ -287,15 +423,75 @@ wantSentences: {
  ["Who has the key?", "Chaabi kiske paas hai?", "चाबी किसके पास है?"],
  ["Why do you have this?", "Aapke paas yeh kyon hai?", "आपके पास यह क्यों है?"]
  ],
- likeSentences: [
- ["I like tea.", "Mujhe chai pasand hai.", "मुझे चाय पसंद है।"],
- ["She likes to read books.", "Use kitabein padhna pasand hai.", "उसे किताबें पढ़ना पसंद है।"],
- ["They don't like movies.", "Unhe filmein pasand nahin hain.", "उन्हें फिल्में पसंद नहीं हैं।"],
- ["Do you like spicy food?", "Kya aapko masaledaar khana pasand hai?", "क्या आपको मसालेदार खाना पसंद है?"],
- ["What do you like?", "Aapko kya pasand hai?", "आपको क्या पसंद है?"]
- ],
+likeSentences: {
+  like: {
+    affirmative: [
+      ["I like tea.", "Mujhe chai pasand hai.", "मुझे चाय पसंद है।"]
+    ],
+    negative: [
+      ["They don't like movies.", "Unhe filmein pasand nahin hain.", "उन्हें फिल्में पसंद नहीं हैं।"]
+    ],
+    questions: {
+      yesNo: [
+        ["Do you like spicy food?", "Kya aapko masaledaar khana pasand hai?", "क्या आपको मसालेदार खाना पसंद है?"]
+      ],
+      wh: [
+        ["What do you like?", "Aapko kya pasand hai?", "आपको क्या पसंद है?"]
+      ]
+    }
+  },
+  likeTo: {
+    affirmative: [
+      ["She likes to read books.", "Use kitabein padhna pasand hai.", "उसे किताबें पढ़ना पसंद है।"]
+    ],
+    negative: [],
+    questions: {
+      yesNo: [],
+      wh: []
+    }
+  }
+},
 
- 
+GerundInfinitives:{
+  "verb+ne / ne ke liye ":{
+   affirmative: [
+      ["She wants to dance.", "Vah naachna chahti hai.", "वह नाचना चाहती है।"],
+      ["They want to go home.", "Ve ghar jaana chahte hain.", "वे घर जाना चाहते हैं।"]
+    ],
+    negative: [
+      ["He doesn't want to sleep.", "Vah sona nahin chahta hai.", "वह सोना नहीं चाहता है।"],
+      ["They don't want to study.", "Ve padhna nahin chahte hain.", "वे पढ़ना नहीं चाहते हैं।"]
+    ],
+    questions: {
+      yesNo: [
+        ["Do you like spicy food?", "Kya aapko masaledaar khana pasand hai?", "क्या आपको मसालेदार खाना पसंद है?"]
+      ],
+      wh: [
+        ["What do you like?", "Aapko kya pasand hai?", "आपको क्या पसंद है?"]
+      ]
+    }
+  },
+  "verb+na ":{
+   affirmative: [
+      ["She wants to dance.", "Vah naachna chahti hai.", "वह नाचना चाहती है।"],
+      ["They want to go home.", "Ve ghar jaana chahte hain.", "वे घर जाना चाहते हैं।"]
+    ],
+    negative: [
+      ["He doesn't want to sleep.", "Vah sona nahin chahta hai.", "वह सोना नहीं चाहता है।"],
+      ["They don't want to study.", "Ve padhna nahin chahte hain.", "वे पढ़ना नहीं चाहते हैं।"]
+    ],
+    questions: {
+      yesNo: [
+        ["Do you like spicy food?", "Kya aapko masaledaar khana pasand hai?", "क्या आपको मसालेदार खाना पसंद है?"]
+      ],
+      wh: [
+        ["What do you like?", "Aapko kya pasand hai?", "आपको क्या पसंद है?"]
+      ]
+    }
+  }
+},
+  
+
  canSentences: [
  ["I can speak Hindi.", "Main Hindi bol sakta hoon.", "मैं हिंदी बोल सकता हूँ।"],
  ["She can swim.", "Vah tair sakti hai.", "वह तैर सकती है।"],
@@ -400,7 +596,39 @@ nouns: {
     ["Sister", "Behen", "बहन"],
     ["Friend", "Dost", "दोस्त"],
     ["Child", "Baccha", "बच्चा"]
+  ],
+
+  "Plural Nouns": {
+  "i ending": [
+    ["Girl - Ladki (लड़की)", "Ladkiyaan", "लड़कियाँ"],
+    ["Chair - Kursi (कुर्सी)", "Kursiyan", "कुर्सियाँ"],
+    ["River - Nadi (नदी)", "Nadiyaan", "नदियाँ"],
+    ["Story - Kahani (कहानी)", "Kahaniyaan", "कहानियाँ"]
+  ],
+  "a ending": [
+    ["Boy - Ladka (लड़का)", "Ladke", "लड़के"],
+    ["Child - Baccha (बच्चा)", "Bacche", "बच्चे"],
+    ["Man - Aadmi (आदमी)", "Aadmi", "आदमी"],
+    ["Room - Kamra (कमरा)", "Kamre", "कमरे"]
   ]
+},
+"Oblique Case": {
+  "singular": [
+    ["Room - Kamra (कमरा)", "Kamre mein", "कमरे में"],
+    ["Boy - Ladka (लड़का)", "Ladke ke saath", "लड़के के साथ"],
+    ["Teacher - Adhyaapak (अध्यापक)", "Adhyaapak se", "अध्यापक से"],
+    ["Child - Baccha (बच्चा)", "Bacche ko", "बच्चे को"],
+    ["Friend - Dost (दोस्त)", "Dost ke paas", "दोस्त के पास"]
+  ],
+  "plural": [
+    ["Rooms - Kamre (कमरे)", "Kamron mein", "कमरों में"],
+    ["Boys - Ladke (लड़के)", "Ladkon ke saath", "लड़कों के साथ"],
+    ["Teachers - Adhyaapak (अध्यापक)", "Adhyaapakon se", "अध्यापकों से"],
+    ["Children - Bacche (बच्चे)", "Bacchon ko", "बच्चों को"],
+    ["Friends - Dost (दोस्त)", "Doston ke paas", "दोस्तों के पास"]
+  ]
+}
+
 }
 ,
 adjectives: {
@@ -464,8 +692,41 @@ adverbs: {
     ["Now", "Abhi", "अभी"],
     ["Later", "Baad mein", "बाद में"]
   ]
-}
-,
+},
+
+"relationshipWords": [
+  ["Mother", "Maa", "माँ"],
+  ["Father", "Pita", "पिता"],
+  ["Brother", "Bhai", "भाई"],
+  ["Sister", "Behen", "बहन"],
+  ["Friend", "Dost", "दोस्त"],
+  ["Husband", "Pati", "पति"],
+  ["Wife", "Patni", "पत्नी"],
+  ["Son", "Beta", "बेटा"],
+  ["Daughter", "Betii", "बेटी"]
+],
+
+"Time": {
+  "daysOfWeek": [
+    ["Sunday", "Ravivaar", "रविवार"],
+    ["Monday", "Somvaar", "सोमवार"],
+    ["Tuesday", "Mangalvaar", "मंगलवार"],
+    ["Wednesday", "Budhvaar", "बुधवार"],
+    ["Thursday", "Guruvaar", "गुरुवार"],
+    ["Friday", "Shukravaar", "शुक्रवार"],
+    ["Saturday", "Shanivaar", "शनिवार"]
+  ],
+  "timeUnits": [
+    ["Hour", "Ghanta", "घंटा"],
+    ["Minute", "Minute", "मिनट"],
+    ["Second", "Second", "सेकंड"],
+    ["Morning", "Subah", "सुबह"],
+    ["Afternoon", "Dopahar", "दोपहर"],
+    ["Evening", "Shaam", "शाम"],
+    ["Night", "Raat", "रात"]
+  ]
+},
+
 prepositions: {
   place: [
     ["On", "Par", "पर"],
@@ -500,63 +761,118 @@ prepositions: {
   ]
 }
 ,
- questionWords: [
- ["What", "Kya", "क्या"],
- ["Where", "Kahan", "कहाँ"],
- ["When", "Kab", "कब"],
- ["Who", "Kaun", "कौन"],
- ["Why", "Kyon", "क्यों"],
- ["How", "Kaise", "कैसे"],
- ["Which", "Kaun sa", "कौन सा"]
- ],
-   devanagariScript: {
-    vowels: [
-      ["A", "a", "अ"], ["AA", "aa", "आ"], ["I", "i", "इ"], ["II", "ee", "ई"],
-      ["U", "u", "उ"], ["UU", "oo", "ऊ"], ["RI", "ri", "ऋ"], ["E", "e", "ए"],
-      ["AI", "ai", "ऐ"], ["O", "o", "ओ"], ["AU", "au", "औ"], ["An", "an", "अं"],
-      ["Ah", "ah", "अः"]
-    ],
-consonants: [
-  ["Ka", "ka", "क"], ["Kha", "kha", "ख"], ["Ga", "ga", "ग"], ["Gha", "gha", "घ"], ["Nga", "nga", "ङ"],
-  ["Cha", "cha", "च"], ["Chha", "chha", "छ"], ["Ja", "ja", "ज"], ["Jha", "jha", "झ"], ["Nya", "nya", "ञ"],
-  ["Ta", "ṭa", "ट"], ["Tha", "ṭha", "ठ"], ["Da", "ḍa", "ड"], ["Dha", "ḍha", "ढ"], ["Na", "ṇa", "ण"],
-  ["Ta", "ta", "त"], ["Tha", "tha", "थ"], ["Da", "da", "द"], ["Dha", "dha", "ध"], ["Na", "na", "न"],
-  ["Pa", "pa", "प"], ["Pha", "pha", "फ"], ["Ba", "ba", "ब"], ["Bha", "bha", "भ"], ["Ma", "ma", "म"],
-  ["Ya", "ya", "य"], ["Ra", "ra", "र"], ["La", "la", "ल"], ["Va", "va", "व"],
-  ["Sha", "sha", "श"], ["Sha (retroflex)", "ṣa", "ष"], ["Sa", "sa", "स"], ["Ha", "ha", "ह"],
-  ["Ksha", "kṣa", "क्ष"], ["Tra", "tra", "त्र"], ["Gya", "gya", "ज्ञ"]
-],
+"question": {
+  "Wh-Question Words": [
+    ["What", "Kya", "क्या"],
+    ["Where", "Kahan", "कहाँ"],
+    ["When", "Kab", "कब"],
+    ["Who", "Kaun", "कौन"],
+    ["Why", "Kyon", "क्यों"],
+    ["How", "Kaise", "कैसे"],
+    ["Which", "Kaun sa", "कौन सा"]
+  ],
+  "Yes / No Question Words": [
+    ["Are you", "Kya tum", "क्या तुम"],
+    ["Is he", "Kya woh", "क्या वह"],
+    ["Do you", "Kya aap", "क्या आप"]
+  ]
+}
+,
+  IndependentVowels: {
+    content: [
+    ["अ", "", "a"],
+    ["आ", "", "aa"],
+    ["इ", "", "i"],
+    ["ई", "", "ee"],
+    ["उ", "", "u"],
+    ["ऊ", "", "oo"],
+    ["ऋ", "", "ri"],
+    ["ए", "", "e"],
+    ["ऐ", "", "ai"],
+    ["ओ", "", "o"],
+    ["औ", "", "au"],
+    ["अं", "", "an"],
+    ["अः", "", "ah"]
+  ],
+    examples: []
+  },
 
-    matras: [
-  ["aa", "aa", "ा"], ["i", "i", "ि"], ["ii", "ee", "ी"],
-  ["u", "u", "ु"], ["uu", "oo", "ू"], ["ri", "ri", "ृ"],
-  ["e", "e", "े"], ["ai", "ai", "ै"], ["o", "o", "ो"],
-  ["au", "au", "ौ"], ["anuswar", "an", "ं"], ["visarga", "ah", "ः"]
-],
+  DependentVowels: {
+    content: [
+    ["ा", "", "aa"],
+    ["ि", "", "i"],
+    ["ी", "", "ee"],
+    ["ु", "", "u"],
+    ["ू", "", "oo"],
+    ["ृ", "", "ri"],
+    ["े", "", "e"],
+    ["ै", "", "ai"],
+    ["ो", "", "o"],
+    ["ौ", "", "au"],
+    ["ं", "", "an"],
+    ["ः", "", "ah"]
+  ],
+    examples: []
+  },
 
- simpleWords: [
-  ["Ram", "Ram", "राम"],
-  ["Pani", "Paani", "पानी"],
-  ["Kitaab", "Kitaab", "किताब"],
-  ["Ghar", "Ghar", "घर"],
-  ["Maa", "Maa", "माँ"],
-  ["Baccha", "Bacchaa", "बच्चा"],
-  ["Ped", "Ped", "पेड़"],
-  ["Kutta", "Kuttaa", "कुत्ता"],
-  ["Suraj", "Sooraj", "सूरज"],
-  ["Chand", "Chaand", "चाँद"],
-  ["Roti", "Roti", "रोटी"],
-  ["Doodh", "Doodh", "दूध"],
-  ["Pustak", "Pustak", "पुस्तक"],
-  ["Mez", "Mez", "मेज़"],
-  ["Kursi", "Kursi", "कुर्सी"]
-],
+  Consonants: {
+    content:[
+    ["क", "", "ka"], ["ख", "", "kha"], ["ग", "", "ga"], ["घ", "", "gha"], ["ङ", "", "nga"],
+    ["च", "", "cha"], ["छ", "", "chha"], ["ज", "", "ja"], ["झ", "", "jha"], ["ञ", "", "nya"],
+    ["ट", "", "ṭa"], ["ठ", "", "ṭha"], ["ड", "", "ḍa"], ["ढ", "", "ḍha"], ["ण", "", "ṇa"],
+    ["त", "", "ta"], ["थ", "", "tha"], ["द", "", "da"], ["ध", "", "dha"], ["न", "", "na"],
+    ["प", "", "pa"], ["फ", "", "pha"], ["ब", "", "ba"], ["भ", "", "bha"], ["म", "", "ma"],
+    ["य", "", "ya"], ["र", "", "ra"], ["ल", "", "la"], ["व", "", "va"],
+    ["श", "", "sha"], ["ष", "", "ṣa"], ["स", "", "sa"], ["ह", "", "ha"],
+    ["क्ष", "", "kṣa"], ["त्र", "", "tra"], ["ज्ञ", "", "gya"]
+  ],
+    examples: []
+  },
 
-    conjuncts: [
-      ["Kta", "kta", "क्त"], ["Tra", "tra", "त्र"], ["Gya", "gya", "ज्ञ"], ["Shra", "shra", "श्र"]
-    ]
+  ConjunctCharacters: {
+    content: [
+    ["क्त", "", "kta"],
+    ["त्र", "", "tra"],
+    ["ज्ञ", "", "gya"],
+    ["श्र", "", "shra"],
+    ["क्ष", "", "kṣa"],
+    ["ज्ञ", "", "gya"],
+    ["त्र", "", "tra"],
+    ["श्र", "", "śra"],
+    ["द्य", "", "dya"],
+    ["स्थ", "", "stha"]
+  ],
+    examples: []
+  },
+
+  ChandrabinduAndDot: {
+    content: [
+    ["ँ", "", "˜"],
+    ["ं", "", "an"],
+    ["ः", "", "ah"],
+    ["़", "", "."],
+    ["ऽ", "", "’"]
+  ],
+    examples: []
+  },
+
+  Numbers: {
+    content: [
+    ["०", "", "shoonya"],
+    ["१", "", "ek"],
+    ["२", "", "do"],
+    ["३", "", "teen"],
+    ["४", "", "chaar"],
+    ["५", "", "paanch"],
+    ["६", "", "chhah"],
+    ["७", "", "saat"],
+    ["८", "", "aath"],
+    ["९", "", "nau"]
+  ],
+    examples: []
   }
-};
+}
+;
 let currentPath = [];
 
 function showFlashcardsAtPath(path = []) {
