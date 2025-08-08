@@ -1,6 +1,6 @@
 /* === Global Reset & Base === */
 body {
-    font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
+        font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
     background: #f0f2f5;
     margin: 0;
     padding: 2rem 1rem;
@@ -155,13 +155,11 @@ h1 {
     overflow-y: auto;
 }
 
-/* Card Front */
 .card-front strong {
     font-size: 1.8em;
     color: #1d4ed8;
 }
 
-/* Card Back */
 .card-back {
     transform: rotateY(180deg);
     background: #f8fafc;
@@ -211,4 +209,14 @@ h1 {
 
 .hidden {
   display: none !important;
+}
+
+/* Grammar Vocabulary stays green */
+.topic-button.grammar-topic {
+    background-color: #10b981; /* Green */
+}
+
+/* Themed Vocabulary gets a new color */
+.topic-button.vocab-topic {
+    background-color: #ef4444; /* Red (change to any color you like) */
 }
