@@ -518,6 +518,15 @@ GerundInfinitives:{
  ["Give me that.", "Mujhe woh do.", "मुझे वह दो।"],
  ["Don't do that.", "Woh mat karo.", "वह मत करो।"]
  ],
+ "Commands": [
+  ["Come here.", "Yahaan aaiye.", "यहाँ आइए।"],
+  ["Go there.", "Wahan jaiye.", "वहाँ जाइए।"],
+  ["Listen carefully.", "Dhyaan se suniye.", "ध्यान से सुनिए।"],
+  ["Please stop here.", "Kripya yahaan rukiyega.", "कृपया यहाँ रुकीए।"],
+  ["Speak slowly.", "Dheere boliye.", "धीरे बोलिए।"],
+  ["Give me that.", "Mujhe woh dijiye.", "मुझे वह दीजिए।"],
+  ["Don't do that.", "Woh mat kijiye.", "वह मत कीजिए।"]
+],
 verbs: {
   movement: [
     ["To go", "Jaana", "जाना"],
@@ -636,38 +645,36 @@ adjectives: {
     ["Big", "Bada", "बड़ा"],
     ["Small", "Chhota", "छोटा"],
     ["Tall", "Lamba", "लंबा"],
-    ["Short", "Naata", "नाटा"],
-    ["Huge", "Bahut Bada", "बहुत बड़ा"]
+    ["Short", "Chhota", "छोटा"],          // 'Naata' is dialectal or less common; 'Chhota' is widely used
   ],
   appearance: [
     ["Beautiful", "Sundar", "सुंदर"],
-    ["Ugly", "Bikaar", "बिकर"],
+    ["Ugly", "Bura", "बुरा"],              // 'Bikaar' is not commonly used; 'Bura' or 'Badsoorat' better
     ["Clean", "Saaf", "साफ़"],
     ["Dirty", "Ganda", "गंदा"],
-    ["Smart", "Chatur", "चतुर"]
+    ["Clever", "Chaalaak", "चालाक"],
+    ["Cute", "Pyarā", "प्यारा"],         // Used for females or objects
   ],
   temperature: [
     ["Hot", "Garam", "गरम"],
     ["Cold", "Thanda", "ठंडा"],
-    ["Warm", "Naram Garam", "नरम गरम"],
-    ["Cool", "Thanda Sa", "ठंडा सा"],
-    ["Freezing", "Jamne Wala", "जमने वाला"]
   ],
   emotions: [
     ["Happy", "Khush", "खुश"],
     ["Sad", "Udaas", "उदास"],
     ["Angry", "Gussa", "गुस्सा"],
-    ["Excited", "Utejit", "उत्साहित"],
-    ["Scared", "Dara Hua", "डरा हुआ"]
+    ["Scared", "Dara Hua", "डरा हुआ"],
+    ["Nervous", "Ghabraya Hua", "घबराया हुआ"],
+    ["Calm", "Shant", "शांत"],
+    ["Surprised", "Hairan", "हैरान"]
   ],
   speed: [
     ["Fast", "Tez", "तेज़"],
     ["Slow", "Dheere", "धीरे"],
     ["Quick", "Jaldi", "जल्दी"],
-    ["Speedy", "Teevr", "तीव्र"],
-    ["Sluggish", "Sust", "सुस्त"]
   ]
 }
+
 
 ,
 adverbs: {
