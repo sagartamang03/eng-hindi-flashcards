@@ -1,9 +1,63 @@
 const data = {
 
+  know_phrases: [
+  ["I know", "Mujhe pata hai", "मुझे पता है"],
+  ["You know", "Tumhe pata hai", "तुम्हें पता है"],
+  ["He knows", "Use pata hai", "उसे पता है"],
+  ["She knows", "Use pata hai", "उसे पता है"],
+  ["We know", "Hume pata hai", "हमें पता है"],
+  ["They know", "Unhe pata hai", "उन्हें पता है"],
+  ["Do you know?", "Kya tumhe pata hai?", "क्या तुम्हें पता है?"],
+  ["I don’t know", "Mujhe nahi pata", "मुझे नहीं पता"],
+  ["You don’t know", "Tumhe nahi pata", "तुम्हें नहीं पता"]
+],
+time_phrases: [
+  ["It is one o'clock", "Ek baje hai", "एक बजे हैं"],
+  ["It is two o'clock", "Do baje hai", "दो बजे हैं"],
+  ["It is three o'clock", "Teen baje hai", "तीन बजे हैं"],
+  ["It is four o'clock", "Chaar baje hai", "चार बजे हैं"],
+  ["It is five o'clock", "Paanch baje hai", "पाँच बजे हैं"],
+  ["It is six o'clock", "Chhah baje hai", "छह बजे हैं"],
+  ["It is seven o'clock", "Saat baje hai", "सात बजे हैं"],
+  ["It is eight o'clock", "Aath baje hai", "आठ बजे हैं"],
+  ["It is nine o'clock", "Nau baje hai", "नौ बजे हैं"],
+  ["It is ten o'clock", "Das baje hai", "दस बजे हैं"],
+  ["It is eleven o'clock", "Gyaarah baje hai", "ग्यारह बजे हैं"],
+  ["It is twelve o'clock", "Baarah baje hai", "बारह बजे हैं"],
+  ["What time is it?", "Kitne baje hai?", "कितने बजे हैं?"],
+  ["It is half past three", "Saaढ़े teen baje hai", "साढ़े तीन बजे हैं"],
+  ["It is quarter past five", "Pauhne paanch baje hai", "पौने पाँच बजे हैं"],
+  ["It is quarter to four", "Sava chaar baje hai", "सवा चार बजे हैं"]
+],
+comparative_structures: {
+  than_phrases: [
+    ["I am taller than you", "Main tumse lamba hoon", "मैं तुमसे लंबा हूँ"],
+    ["She is smarter than him", "Woh usse zyada samajhdaar hai", "वह उससे ज़्यादा समझदार है"],
+    ["This book is better than that", "Yeh kitaab us kitaab se achhi hai", "यह किताब उस किताब से अच्छी है"],
+    ["Today is hotter than yesterday", "Aaj kal se zyada garam hai", "आज कल से ज़्यादा गर्म है"],
+    ["Your house is bigger than mine", "Tumhara ghar mere ghar se bada hai", "तुम्हारा घर मेरे घर से बड़ा है"],
+    ["I run faster than my friend", "Main apne dost se tez daudta hoon", "मैं अपने दोस्त से तेज दौड़ता हूँ"],
+    ["He works harder than before", "Woh pehle se zyada mehnat karta hai", "वह पहले से ज़्यादा मेहनत करता है"],
+    ["This road is longer than that road", "Yeh sadak us sadak se lambi hai", "यह सड़क उस सड़क से लंबी है"]
+  ],
+  
+  the_most_phrases: [
+    ["He is the tallest in the class", "Woh class mein sabse lamba hai", "वह क्लास में सबसे लंबा है"],
+    ["This is the best movie", "Yeh sabse achhi film hai", "यह सबसे अच्छी फ़िल्म है"],
+    ["She is the smartest student", "Woh sabse samajhdaar vidyarthi hai", "वह सबसे समझदार विद्यार्थी है"],
+    ["This road is the longest", "Yeh sadak sabse lambi hai", "यह सड़क सबसे लंबी है"],
+    ["Today is the hottest day", "Aaj sabse garam din hai", "आज सबसे गर्म दिन है"],
+    ["Mount Everest is the highest mountain", "Mount Everest sabse ooncha pahad hai", "माउंट एवरेस्ट सबसे ऊँचा पहाड़ है"],
+    ["This shop is the cheapest", "Yeh dukaan sabse sasti hai", "यह दुकान सबसे सस्ती है"],
+    ["He works the hardest", "Woh sabse zyada mehnat karta hai", "वह सबसे ज़्यादा मेहनत करता है"]
+  ]
+},
+
  pronouns: {
     subject: [
       ["I", "Main", "मैं"],
-      ["You (informal)", "Tum", "तुम"],
+      ["You (informal)", "Tu", "तू"],
+      ["You (semi-formal)", "Tum", "तुम"],
       ["You (formal)", "Aap", "आप"],
       ["He", "ye / vo", "ये / वो"],
       ["She", "ye / vo", "ये / वो"],
@@ -13,7 +67,7 @@ const data = {
     ],
     object: [
       ["to Me", "Mujhe / Mujhko", "मुझे / मुझको"],
-      ["to You (informal)", "Tumhe / Tumko", "तुम्हें / तुमको"],
+      ["to You (semi-formal)", "Tumhe / Tumko", "तुम्हें / तुमको"],
       ["to You (formal)", "Aapko", "आपको"],
       ["to Him", "Usse / Usko", "उसे / उसको"],
       ["to Her", "Usse / Usko", "उसे / उसको"],
@@ -39,10 +93,10 @@ const data = {
   ["By oneself / Automatically", "Apne-aap", "अपनेआप"]
 ],
     unspecified:[
-      ["Someone", "Koi vyakti / Koi", "कोई व्यक्ति / कोई"],
-      ["Something", "Kuch / Koi vastu", "कुछ / कोई वस्तु"],
-      ["Anyone", "Koi bhi vyakti / Koi bhi", "कोई भी व्यक्ति / कोई भी"],
-      ["Anything", "Kuch bhi / Koi bhi vastu", "कुछ भी / कोई भी वस्तु"]
+      ["Someone", "Koi", "कोई"],
+      ["Something", "Kuch", "कुछ"],
+      ["Anyone", "Koi bhi", "कोई भी"],
+      ["Anything", "Kuch bhi", "कुछ भी"],
     ],
   
   },
@@ -72,7 +126,78 @@ const data = {
  ["300", "Teen sau", "तीन सौ"],
  ["400", "Chaar sau", "चार सौ"]
  ],
- 
+ Directions: [
+  ["North", "Uttar", "उत्तर"],
+  ["South", "Dakshin", "दक्षिण"],
+  ["East", "Puurv", "पूर्व"],
+  ["West", "Pashchim", "पश्चिम"],
+  ["Left", "Baayen", "बाएँ"],
+  ["Right", "Daayen", "दाएँ"],
+  ["Straight", "Seedha", "सीधा"],
+  ["Back", "Peeche", "पीछे"],
+  ["Up", "Upar", "ऊपर"],
+  ["Down", "Neeche", "नीचे"],
+  ["Near", "Paas", "पास"],
+  ["Far", "Door", "दूर"],
+  ["Turn", "Mudna", "मुड़ना"],
+  ["Across", "Par", "पर"],
+  ["Between", "Ke beech", "के बीच"],
+  ["Around", "Aaspaas", "आसपास"],
+  ["Towards", "Ki ore / Taraf", "की ओर / तरफ़"],
+],
+Colors: [
+  ["Red", "Laal", "लाल"],
+  ["Blue", "Neela", "नीला"],
+  ["Green", "Hara", "हरा"],
+  ["Yellow", "Peela", "पीला"],
+  ["Black", "Kaala", "काला"],
+  ["White", "Safed", "सफ़ेद"],
+  ["Orange", "Narangi", "नारंगी"],
+  ["Pink", "Gulabi", "गुलाबी"],
+  ["Purple", "Baingani", "बैंगनी"],
+  ["Brown", "Bhoora", "भूरा"],
+  ["Grey", "Slatee", "स्लेटी"],
+  ["Golden", "Sunehra", "सुनहरा"],
+  ["Silver", "Chaandi", "चाँदी"]
+],
+Weather: [
+  ["Sunny", "Dhoopdaar", "धूपदार"],
+  ["Cloudy", "Baadal chhaya", "बादल छाया"],
+  ["Rainy", "Barsati", "बरसाती"],
+  ["Windy", "Hawadaar", "हवादार"],
+  ["Stormy", "Aandhi tufaan", "आंधी तूफ़ान"],
+  ["Snowy", "Barfili", "बर्फ़ीली"],
+  ["Foggy", "Kohra", "कोहरा"],
+  ["Hot", "Garam", "गर्म"],
+  ["Cold", "Thanda", "ठंडा"],
+  ["Humid", "Adhrata", "आर्द्रता"],
+  ["Dry", "Sookha", "सूखा"],
+  ["Thunder", "Garaj", "गरज"],
+  ["Lightning", "Bijli", "बिजली"]
+],
+Fruits_vegetables: [
+  ["Apple", "Seb", "सेब"],
+  ["Banana", "Kela", "केला"],
+  ["Mango", "Aam", "आम"],
+  ["Orange", "Santra", "संतरा"],
+  ["Grapes", "Angoor", "अंगूर"],
+  ["Watermelon", "Tarbooj", "तरबूज"],
+  ["Papaya", "Papita", "पपीता"],
+  ["Pineapple", "Ananas", "अनानास"],
+  ["Potato", "Aloo", "आलू"],
+  ["Tomato", "Tamatar", "टमाटर"],
+  ["Onion", "Pyaaz", "प्याज़"],
+  ["Carrot", "Gajar", "गाजर"],
+  ["Spinach", "Palak", "पालक"],
+  ["Cabbage", "Patta gobhi", "पत्ता गोभी"],
+  ["Cauliflower", "Phool gobhi", "फूलगोभी"],
+  ["Brinjal", "Baingan", "बैंगन"],
+  ["Cucumber", "Kheera", "खीरा"],
+  ["Chili", "Mirch", "मिर्च"],
+  ["Garlic", "Lahsun", "लहसुन"],
+  ["Ginger", "Adrak", "अदरक"]
+],
+
  
 daysAndTime: {
     daysAndWeeks: [
